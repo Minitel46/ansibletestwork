@@ -1,7 +1,3 @@
-- name: Installation du serveur
-  hosts: all
-  remote_user: root
-
-  tasks:
-    - name: Installation de git
-      apt: name=git update_cache=yes
+- name: Installation de git
+    yum:
+      name: git
