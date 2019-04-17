@@ -1,3 +1,3 @@
 - name: Installation de git
-    yum:
-      name: git
+  yum:
+    name: git
