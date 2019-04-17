@@ -1,0 +1,8 @@
+---
+- name: Installation de Firefox sur Windows
+  hosts: all
+  tasks:
+    - name: Run Firefox Install
+      win_chocolatey:
+        name: firefox
+        state: present
