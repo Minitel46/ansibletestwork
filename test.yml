@@ -1,3 +1,5 @@
----
-   - name: Creation dossier
-     command: mkdir test
+----
+- hosts: all
+  tasks:
+       - name: Install test git
+         yum: git
