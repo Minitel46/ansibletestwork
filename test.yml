@@ -1,6 +1,5 @@
-- name: Hello World Sample
+- name: Installer
   hosts: all
   tasks:
          - name: Hello Message
-           debug:
-                  msg: "Hello World!"
+           yum: git
