@@ -1,8 +1,8 @@
 ---
-- name: Installation de Firefox sur Windows
+- name: Installation de Git sur windows
   hosts: all
   tasks:
-    - name: Run Firefox Install
+    - name: Run Git Install
       win_chocolatey:
-        name: firefox
+        name: git
         state: present
