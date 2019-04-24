@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Install 7zip vers. 9.20
+      win_package:
+        path: https://www.7-zip.org/a/7z920-x64.msi
+        wait: yes
+        state: present

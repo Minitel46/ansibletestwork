@@ -1,5 +1,6 @@
-- name: Installer
-  hosts: all
-  tasks:
-         - name: Hello Message
-           yum: name=git
+
+
+- name: Install Firefox
+  win_package:
+    path: https://hicap.frontmotion.com/Firefox/FirefoxESR-60.6.1/FirefoxESR-60.6.1-fr.msi
+    state: present
